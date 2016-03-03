@@ -72,3 +72,8 @@ x('http://www.keller.de/de/jobs-karriere/wen-wir-suchen/aktuelle-ausschreibungen
   title: '@text',
   url: '@href'
 }]).write('keller.json')
+
+x('http://www.elster-gas.com/en/careers', '.slideBox:has(div span b:contains(Germany)) tr', [{
+  title: 'td:first-child@text',
+  url: 'a@href'
+}]).write('elster-gas.json').writ
