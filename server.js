@@ -67,3 +67,8 @@ x('http://apetito.de/ueber-apetito/jobs-und-karriere/Stellenangebote/Seiten/defa
   title: '@text',
   url: '@href'
 }]).write('apetito.json')
+
+x('http://www.keller.de/de/jobs-karriere/wen-wir-suchen/aktuelle-ausschreibungen.htm', '.textsitemap a', [{
+  title: '@text',
+  url: '@href'
+}]).write('keller.json')
