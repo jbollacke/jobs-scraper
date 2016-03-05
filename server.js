@@ -76,4 +76,9 @@ x('http://www.keller.de/de/jobs-karriere/wen-wir-suchen/aktuelle-ausschreibungen
 x('http://www.elster-gas.com/en/careers', '.slideBox:has(div span b:contains(Germany)) tr', [{
   title: 'td:first-child@text',
   url: 'a@href'
-}]).write('elster-gas.json').writ
+}]).write('elster-gas.json')
+
+x('http://www.frimo.com/de/karriere/frimo-karriereportal/stellenangebote.html', '.job_el:has(h3:contains(Lotte)) ul li a', [{
+  title: '@text | trim',
+  url: '@href'
+}]).write('frimo.json')
