@@ -82,3 +82,8 @@ x('http://www.frimo.com/de/karriere/frimo-karriereportal/stellenangebote.html', 
   title: '@text | trim',
   url: '@href'
 }]).write('frimo.json')
+
+x('http://www.wuh-lengerich.de/de/units/karriere/jobs-bewerbung/aktuelle-stellenangebote/', '.sitemap--jobs li a', [{
+  title: '@text',
+  url: '@href'
+}]).write('wuh-lengerich.json')
