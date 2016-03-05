@@ -1,5 +1,4 @@
-var Xray = require('x-ray');
-var x = Xray();
+var x = require('x-ray')();
 
 x('http://www.coppenrath-wiese.de/karriere/stellenangebote.aspx', '#m302 h3', [{
   id: '@id',
