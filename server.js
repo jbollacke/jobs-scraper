@@ -87,6 +87,6 @@ x('http://www.wuh-lengerich.de/de/units/karriere/jobs-bewerbung/aktuelle-stellen
   url: '@href'
 }]).write('wuh-lengerich.json')
 
-x('https://www.lmis.de/karriere/festanstellung/#android', 'section:has(h3):nth-child(4n-1)', [{
+x('https://www.lmis.de/karriere/festanstellung/', 'section:has(h3):nth-child(4n-1)', [{
   title: 'h3@text'
 }]).write('lmis.json');
