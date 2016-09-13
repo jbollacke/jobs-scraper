@@ -95,3 +95,8 @@ x('http://www.bps-software.de/unternehmen/karriere.html', '.ce_accordion.block',
   title: 'h4@text',
   description: 'div.accordion@text'
 }]).write('bps-software.json')
+
+x('http://www.mbh-hassink.de/mbh-als-arbeitgeber/wir-suchen-zur-zeit', '#main ul:not(.actions) li a', [{
+  title: '@text',
+  url: '@href'
+}]).write('mbh-hassink.json')
