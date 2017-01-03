@@ -100,3 +100,7 @@ x('http://www.mbh-hassink.de/mbh-als-arbeitgeber/wir-suchen-zur-zeit', '#main ul
   title: '@text',
   url: '@href'
 }]).write('mbh-hassink.json')
+
+x('http://www.gerhardi.com/de/karriere/stellenausschreibungen/', 'div.csc-default:contains(Ibbenbüren) ~ div.accordeon', [{
+  title: 'h3@text'
+}]).write('gerhardi.json')
