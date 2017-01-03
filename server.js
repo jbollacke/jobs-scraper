@@ -32,9 +32,9 @@ x('https://krone.hr4you.org/job_finder.php?page=1&from=change_page&umkreis_dista
   url: 'a@href'
 }]).write('krone.json')
 
-x('http://crespeldeitersgroup.com/de/karriere/', 'ul:not(#langnavi):not(.menu):not(.sub-menu):not(.fusion-menu):not(.tp-revslider-mainul) li', [{
-  title: 'a@text',
-  url: 'a@href'
+x('http://crespeldeitersgroup.com/de/karriere/', 'div > h3 > a', [{
+  title: '@text',
+  url: '@href'
 }]).write('crespeldeitersgroup.json')
 
 x('http://hoevermann-gruppe.de/karriere/', '.fusion-panel', [{
