@@ -104,3 +104,8 @@ x('http://www.mbh-hassink.de/mbh-als-arbeitgeber/wir-suchen-zur-zeit', '#main ul
 x('http://www.gerhardi.com/de/karriere/stellenausschreibungen/', 'div.csc-default:contains(Ibbenbüren) ~ div.accordeon', [{
   title: 'h3@text'
 }]).write('gerhardi.json')
+
+x('https://jobs.rosen-group.com/Jobs/Index?Dienstregionen=Osnabr%C3%BCck&JobProfile=IT', '#divJobs tr:not(.epunkt-grid-header)', [{
+  title: 'a@text',
+  url: 'a@href'
+}]).write("rosen.json")
