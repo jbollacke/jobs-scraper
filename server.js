@@ -62,7 +62,7 @@ x(
   }]
 ).write('amazone.json')
 
-x('http://apetito.de/ueber-apetito/jobs-und-karriere/Stellenangebote/Seiten/default.aspx', '.BGMiddle a', [{
+x('http://www.apetito.de/ueber-apetito/jobs-und-karriere/Stellenangebote/Seiten/default.aspx', '.BGMiddle a', [{
   title: '@text',
   url: '@href'
 }]).write('apetito.json')
