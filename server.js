@@ -109,3 +109,8 @@ x('https://jobs.rosen-group.com/Jobs/Index?Dienstregionen=Osnabr%C3%BCck&JobProf
   title: 'a@text',
   url: 'a@href'
 }]).write("rosen.json")
+
+x('https://www.kaffee-partner-karriere.de/innendienst.html', 'div.mod_newslist.block div', [{
+  title: 'a@text',
+  url: 'a@href'
+}]).write("kaffee-partner.json")
